@@ -18,6 +18,7 @@ Os dados do arquivo `projetos.csv` se referem aos valores futuros previstos para
 1) Nesta etapa, faça o carregamento dos dados e apresente a df completa. (Peso: 1,0)
 """
 
+import streamlit as st
 
 st.set_page_config(
     page_title="Lista de Exercícios 3",
@@ -26,7 +27,7 @@ st.set_page_config(
 
 st.header("Lista de Exercícios 3")
 
-
+import pandas as pd
 
 arquivo = "projetos.csv"
 df = pd.read_csv(arquivo, sep=';')
